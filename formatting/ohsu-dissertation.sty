@@ -28,6 +28,8 @@
 \setlength{\tabcolsep}{4pt}                 % Table left right padding
 \renewcommand{\arraystretch}{1.2}           % Table vertical 
 \usepackage{chngpage}                       % Change page
+\usepackage[nottoc,numbib]{tocbibind}       % For list of figures & tables in TOC
+
 
 % fonts
 \renewcommand{\rmdefault}{ptm}
@@ -58,8 +60,7 @@
 \rhead{\scshape}
 \cfoot{\thepage}
 
-
-%Handling Keywords
+% handling keywords
 \def\keywordname{{\bfseries \emph Keywords}}%
 \def\keywords#1{\par\addvspace\medskipamount{\rightskip=0pt plus1cm
 \def\and{\ifhmode\unskip\nobreak\fi\ $\cdot$
@@ -269,3 +270,9 @@
 }
 
 \endinput
+
+% list of figures as section
+\renewcommand{\listoffigures}{\begingroup
+    \tocsection
+    \tocfile{\listfigurename}{lof}
+\endgroup}
