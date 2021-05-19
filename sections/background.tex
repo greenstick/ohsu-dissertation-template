@@ -6,7 +6,7 @@
 
 This section should include a comprehensive review of prior work across the stated aims. It also provides a summary of the gaps in the current literature and is will be substantially longer than a background section in a manuscript.
 
-\subsection{Some subsection}
+\subsection{Including figures}
 
 You might include a figure here...
 
@@ -17,4 +17,28 @@ You might include a figure here...
   \label{fig:fig1}
 \end{figure*}
 
-...and reference it like so: \textbf{Figure \ref{fig:fig1}}).
+...and reference it like so: \textbf{Figure \ref{fig:fig1}}.
+
+\subsection{Making tables}
+
+Or maybe you'll make a table...
+
+\documentclass{article}
+
+\begin{table}[h!]
+  \begin{center}
+    \caption{Your first table.}
+    \label{tab:table1}
+    \begin{tabular}{l|c|r} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+      \textbf{Value 1} & \textbf{Value 2} & \textbf{Value 3}\\
+      $\alpha$ & $\beta$ & $\gamma$ \\
+      \hline
+      1 & 1110.1 & a\\
+      2 & 10.1 & b\\
+      3 & 23.113231 & c\\
+    \end{tabular}
+    \label{table:table1}
+  \end{center}
+\end{table}
+
+...an reference it too: \textbf{Table \ref{table:table1}}

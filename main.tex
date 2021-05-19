@@ -6,6 +6,8 @@
 \usepackage{formatting/ohsu-dissertation}   % Include OHSU dissertation style
 
 % Define Text Variables
+% This is where you write in the details
+% of your project, institution, etc.
 \newcommand{\projecttitle}{Your Dissertation Title}
 \newcommand{\projectauthor}{Your Name}
 \newcommand{\department}{Your Department}
@@ -38,6 +40,25 @@
     \tableofcontents
     \clearpage
     
+    \cleardoublepage
+    % \phantomsection
+    % \addcontentsline{toc}{chapter}{\listfigurename}
+    \listoffigures
+    
+    \cleardoublepage
+    % % \phantomsection
+    % \addcontentsline{toc}{chapter}{\list}
+    \listoftables
+    
+    % \include{sections/list-of-tables}
+    % \clearpage
+    
+    % \include{sections/list-of-figures}
+    % \clearpage
+    
+    % \include{sections/list-of-abbreviations}
+    % \clearpage
+    
     \include{sections/introduction}
     \clearpage
     
@@ -65,113 +86,3 @@
 
 \end{document}
 
----
-geometry: [top=1in, bottom=1in, right=1in, left=1.5in]
-fontsize: 12pt
-output:
-  pdf_document:
-    includes:
-      in_header: resources/imports.sty
-nocite: |
-  @dissertateOHSU
-bibliography: bibliography.bib
-csl: resources/ama_citationStyle.csl
----
-
-<!-- DOCUMENT OPTIONS -->
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-title   = 'Title of your dissertation'
-author  = 'Your F. Name'
-month   = 'Month'
-year    = 'Year '
-degree  = 'Doctor of Philosophy'
-track   = 'Your degree track (e.g., Bioinformatics and Computational Biomedicine)'
-dept   = 'Your Department'
-uni     = 'Oregon Health & Science Univeristy'
-loc     = 'Portland, OR'
-chair   = 'Chair Name, PhD'
-advisor = 'Advisor Name, MD, MA'
-member3 = 'Memeber 3 Name, PhD'
-member4 = 'Member 4 Name, MD'
-member5 = 'Member 5 Name, PhD'
-```
-
-
-<!-- TITLE, COPYRIGHT, AND CERTIFICATE OF COMPLETION PAGES -->
-```{r, child='preamble.Rmd'}
-```
-
-
-<!-- DEDICATION AND ACKNOWLEDGEMENTS -->
-\pagenumbering{roman}
-```{r, child='dedication.Rmd'}
-```
-\clearpage
-
-
-<!-- ABSTRACT -->
-```{r, child='abstract.Rmd'}
-```
-\clearpage
-
-
-<!-- TABLE OF CONTENTS -->
-\tableofcontents
-\clearpage
-
-
-<!-- INTRODUCTION -->
-\doublespacing
-\pagenumbering{arabic}
-```{r, child='introduction.Rmd'}
-```
-\clearpage
-
-
-<!-- BACKGROUND -->
-```{r, child='background.Rmd'}
-```
-\clearpage
-
-
-<!-- AIM 1 -->
-```{r, child='aim_1.Rmd'}
-```
-\clearpage
-
-
-<!-- AIM 2 -->
-```{r, child='aim_2.Rmd'}
-```
-\clearpage
-
-
-<!-- AIM 3 -->
-```{r, child='aim_3.Rmd'}
-```
-\clearpage
-
-
-<!-- DISCUSSION -->
-```{r, child='discussion.Rmd'}
-```
-\clearpage
-
-
-<!-- SUMMARY AND CONCLUSIONS -->
-```{r, child='summary_conclusions.Rmd'}
-```
-\clearpage
-
-
-<!-- Appendices -->
-```{r, child='appendix.Rmd'}
-```
-\clearpage
-
-
-\center
-# References
-\raggedright
