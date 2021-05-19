@@ -1,6 +1,8 @@
 # OHSU Dissertation Template
 
-This project is designed to serve as a dissertation template following the guidelines of the School of Medicine at Oregon Health & Science University. 
+***Forget the formatting; get to the writing!***
+
+This project is designed to serve as a dissertation template following the guidelines of the School of Medicine at Oregon Health & Science University.
 
 ## Usage
 
