@@ -2,11 +2,11 @@
 
 ***'Forget the formatting – get to the writing!'***
 
-This project is designed to serve as a dissertation template following the guidelines of the School of Medicine at Oregon Health & Science University.
+This project is a Latex dissertation template following the guidelines of the School of Medicine at Oregon Health & Science University.
 
 ## Usage
 
-I recommend grabbing this project off of the [Overleaf library](https://www.overleaf.com/latex/templates/ohsu-dissertation-template/xhgmkwmftkrs). Overleaf's free for individual users, and $15 a month if you'd like to include collaborators. 
+This template was built in [Overleaf](https://www.overleaf.com/). To get started, I recommend grabbing it off of the [Overleaf library](https://www.overleaf.com/latex/templates/ohsu-dissertation-template/xhgmkwmftkrs). Overleaf's free for individual users, and $15 a month if you'd like to include collaborators. 
 
 If you'd like to keep it local, clone it to your local drive and make sure you have [pandoc](https://pandoc.org/) ready to go to render out the fruit of your hard labor.
 
