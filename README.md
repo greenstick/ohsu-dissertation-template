@@ -16,7 +16,7 @@ As I write this, I'm in the last year of my PhD at OHSU. It's possible that once
 
 ## How Can I Say Thank You?
 
-No need! Although, if you did find this helpful and feel like you have change to spare, here's one way you can show your appreciation!
+No need! Seriously. But, if you did find this helpful and feel like you have change to spare, here's one way you can show your appreciation!
 
 [![Buy me a coffee][buymeacoffee-icon]][buymeacoffee-link]
 
