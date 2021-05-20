@@ -10,7 +10,9 @@ I recommend grabbing this project off ofg the [Overleaf library](https://www.ove
 
 If you'd like to keep it local, clone it to your local drive and make sure you have [pandoc](https://pandoc.org/) ready to go to render out the fruit of your hard labor.
 
-To personalize this template to you, be sure to start by going into `main.tex` and updating the variables therein.
+## First Steps
+
+To personalize this template to you, be sure to start by going into `main.tex` and updating the variables therein (lines 19 - 32).
 
 For example, change this:
 `\newcommand{\projecttitle}{Your Dissertation Title}`
