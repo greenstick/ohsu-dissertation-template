@@ -10,6 +10,14 @@ I recommend grabbing this project off ofg the [Overleaf library](https://www.ove
 
 If you'd like to keep it local, clone it to your local drive and make sure you have [pandoc](https://pandoc.org/) ready to go to render out the fruit of your hard labor.
 
+To personalize this template to you, be sure to start by going into `main.tex` and updating the variables therein.
+
+For example, change this:
+`\newcommand{\projecttitle}{Your Dissertation Title}`
+
+To this:
+`\newcommand{\projecttitle}{An Esoteric Study of the Neural Ganglion of C. elegans}`
+
 ## Contributing
 
 As I write this, I'm in the last year of my PhD at OHSU. It's possible that once I finish that the style guidance will change (or be improved!) Pull requests and issues that help maintain alignment with the published style guide for OHSU School of Medicine will be included and be much appreciated! The [thesis and dissertation style guide](https://github.com/greenstick/ohsu-dissertation-template/blob/main/resources/preparation-of-dissertation-and-thesis.pdf) I've followed is in the resources folder. Further, if your department of school has more specific guidance, branches are encouraged!

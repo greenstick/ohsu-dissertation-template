@@ -2,8 +2,16 @@
 %% Document Setup
 %% 
 
+% Declare Document Class
 \documentclass{article}
-\usepackage{formatting/ohsu-dissertation}   % Include OHSU dissertation style
+
+% Import OHSU dissertation style
+\usepackage{styling/ohsu-dissertation}
+
+% For formatting reasons, we input the list of abbreviations
+% (i.e. glossary) section outside of the document
+\makeglossaries
+\input{sections/glossary.tex}
 
 % Define Text Variables
 % This is where you write in the details
@@ -33,20 +41,25 @@
     \pagenumbering{roman}
     \clearpage
     
-    \include{sections/dedication}
+    \tableofcontents
     \clearpage
     
     \include{sections/abstract}
     \clearpage
     
-    \tableofcontents
-    \newpage
+    \include{sections/dedication}
+    \clearpage
     
     \listoffigures
-    \newpage
+    \clearpage
     
     \listoftables
-    \newpage
+    \clearpage
+    
+    % Generate List of Abbreviations
+    \setglossarystyle{listgroup}
+    \printglossary[type=\acronymtype,title={List of Abbreviations},toctitle=List of Abbreviations] 
+    \clearpage
     
     \include{sections/introduction}
     \clearpage

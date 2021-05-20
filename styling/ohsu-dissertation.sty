@@ -29,7 +29,7 @@
 \renewcommand{\arraystretch}{1.2}           % Table vertical 
 \usepackage{chngpage}                       % Change page
 \usepackage[nottoc,numbib]{tocbibind}       % For list of figures & tables in TOC
-
+\usepackage[acronym,toc]{glossaries}        % Load glossaries package
 
 % fonts
 \renewcommand{\rmdefault}{ptm}
@@ -144,12 +144,15 @@
 \setlength{\abovecaptionskip}{\@abovecaptionskip}
 \setlength{\belowcaptionskip}{\@belowcaptionskip}
 
-% swap above/belowcaptionskip lengths for tables
+% swap above/below caption skip lengths for tables
 \renewenvironment{table}
   {\setlength{\abovecaptionskip}{\@belowcaptionskip}%
    \setlength{\belowcaptionskip}{\@abovecaptionskip}%
    \@float{table}}
   {\end@float}
+
+% table of contents formatting
+\renewcommand*\contentsname{TABLE OF CONTENTS}
 
 % footnote formatting
 \setlength{\footnotesep }{6.65\p@}
@@ -271,8 +274,13 @@
 
 \endinput
 
-% list of figures as section
+% list of figures and tables as section
 \renewcommand{\listoffigures}{\begingroup
     \tocsection
-    \tocfile{\listfigurename}{lof}
+    \tocfile{\listfigurename}{}
+\endgroup}
+
+\renewcommand{\listoftables}{\begingroup
+    \tocsection
+    \tocfile{\listtablename}{}
 \endgroup}
