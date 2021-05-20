@@ -6,7 +6,7 @@ This project is designed to serve as a dissertation template following the guide
 
 ## Usage
 
-I recommend grabbing this project off ofg the [Overleaf library](https://www.overleaf.com/latex/templates/ohsu-dissertation-template/xhgmkwmftkrs). Overleaf's free for individual users, and $15 a month if you'd like to include collaborators. 
+I recommend grabbing this project off of the [Overleaf library](https://www.overleaf.com/latex/templates/ohsu-dissertation-template/xhgmkwmftkrs). Overleaf's free for individual users, and $15 a month if you'd like to include collaborators. 
 
 If you'd like to keep it local, clone it to your local drive and make sure you have [pandoc](https://pandoc.org/) ready to go to render out the fruit of your hard labor.
 
