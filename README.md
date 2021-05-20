@@ -12,13 +12,15 @@ If you'd like to keep it local, clone it to your local drive and make sure you h
 
 ## First Steps
 
-To personalize this template to you, be sure to start by going into `main.tex` and updating the variables therein (lines 19 - 32).
+1. To personalize this template to you, be sure to start by going into `main.tex` and updating the variables therein (lines 19 - 32).
 
 For example, change this:
 `\newcommand{\projecttitle}{Your Dissertation Title}`
 
 To this:
 `\newcommand{\projecttitle}{An Esoteric Study of the Neural Ganglion of C. elegans}`
+
+2. See the Background section (and sections/background.tex) for information on creating tables and including figures, abbreviations, and citations.
 
 ## Contributing
 
